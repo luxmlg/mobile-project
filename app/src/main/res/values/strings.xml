@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TicTacToeLM</string>
+    <string name="cell">cell</string>
 </resources>

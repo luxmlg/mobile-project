@@ -7,12 +7,108 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/turnText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:ems="10"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@{turnStatus}"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button"
+                style="@style/ButtonStyle"
+                android:contentDescription="@string/cell"
+                android:onClick="btnClick"
+                android:tag="0"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/ButtonStyle"
+                android:contentDescription="@string/cell"
+                android:onClick="btnClick"
+                android:tag="1" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/ButtonStyle"
+                android:contentDescription="@string/cell"
+                android:onClick="btnClick"
+                android:tag="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/ButtonStyle"
+                android:contentDescription="@string/cell"
+                android:onClick="btnClick"
+                android:tag="3" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/ButtonStyle"
+                android:contentDescription="@string/cell"
+                android:onClick="btnClick"
+                android:tag="4" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/ButtonStyle"
+                android:contentDescription="@string/cell"
+                android:onClick="btnClick"
+                android:tag="5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/ButtonStyle"
+                android:contentDescription="@string/app_name"
+                android:onClick="btnClick"
+                android:tag="6" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/ButtonStyle"
+                android:contentDescription="@string/cell"
+                android:onClick="btnClick"
+                android:tag="7" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/ButtonStyle"
+                android:contentDescription="@string/cell"
+                android:onClick="btnClick"
+                android:tag="8" />
+        </TableRow>
+
+    </TableLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
